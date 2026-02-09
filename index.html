@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+    #yes {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+    #no {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Will you be my Valentine, Rahma? ❤️</h1>
+
+<button id="yes">Yes</button>
+<button id="no">No</button>
+
+<script>
+  let size = 20;
+  document.getElementById("no").onclick = function() {
+    size += 10;
+    document.getElementById("yes").style.fontSize = size + "px";
+  };
+</script>
+
+</body>
+</html>
